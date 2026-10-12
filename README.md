@@ -1,9 +1,9 @@
-# nkr-segmentation | Segmentation Workflow for Ground-Truth Collection (2026)
+# nkr-segmentation | Segmentation for ground truth collection
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Norwegian Title:** Segmentering for innsamling av bakkesannheter for lavland og fjell.  
-**Project Owner:** Norwegian Environment Agency (NEA).  
+**Norwegian Title:** Segmentering for innsamling av bakkesannheter for lavland og fjell.
+**Project Owner:** Norwegian Environment Agency (NEA).
 **Repository Purpose:** Provide reproducible preprocessing and eCognition rulesets for segmentation used in ground-truth data collection.
 
 ---

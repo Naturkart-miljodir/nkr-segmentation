@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eCog.Proc UserName="syvpet" Company="Milj&#195;&#184;direktoratet" Copyright="" version="20181002" use-reproducable-poly="1" project-unit="5" engine-version="10.5.0" engine-build="5490" update-topology="0" distance_calculation="CG" resampling_compatibility="0" ver="0">
+	<ruleset-info>
+		<name></name>
+		<author>syvpet</author>
+		<tags></tags>
+		<version></version>
+		<description></description>
+		<input></input>
+		<output></output>
+	</ruleset-info>
+	<ParamValueSetCntnr></ParamValueSetCntnr>
+	<ObjectDependencies>
+		<ImgLayers>
+			<ChnlProxyCntnr>
+				<Layers>
+					<ChnlProxy strName="1_red" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="2_green" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="3_nir" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="4_TPI20" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="5_TPI50" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="6_TPI70" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="7_CHM_gaus5" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="8_CHM" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="9_NDVI" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="10_Slope_Gaus5" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="ir" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="red" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="green" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="blue" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="solar" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi70m" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="solar_smooth_norm" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi70m_norm" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tri" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="dtw" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="slope" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="slope2" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="slope3median9x9" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="slope3median24x24" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi20012x12" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi503x3" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi5024x24" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="NDVI" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi7024x24" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi10024x24" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="chm" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="chm_gaus24x24" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="pan" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="nir" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="temporary" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="outlines" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="pixel frequency" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="outlines_generalized" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tri_10m" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="chm_gaus5" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="tpi50_gaus1" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="slope_gaus5" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 1" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 2" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 3" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 4" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 5" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 6" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 7" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 8" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 9" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 10" flags="4">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+				</Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ImgLayers>
+		<ThmLayers>
+			<ChnlProxyCntnr>
+				<Layers>
+					<ChnlProxy strName="vector_dissolve" flags="8">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="vector_smoothed" flags="8">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="AR5" flags="8">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+				</Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ThmLayers>
+		<MapLvlProxyCntnr>
+			<MapLvlProxies>
+				<MapLvlProxy strName="Pixel Level" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+				<MapLvlProxy strName="New Level" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+				<MapLvlProxy strName="L0" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+				<MapLvlProxy strName="L1" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+				<MapLvlProxy strName="L3" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+				<MapLvlProxy strName="L2" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+			</MapLvlProxies>
+			<MapLvlVrblValues></MapLvlVrblValues>
+		</MapLvlProxyCntnr>
+		<ProcVrblCntnr>
+			<ProcVrbl iId="2" eType="1">
+				<DValue value="Forest" type="string"></DValue>
+				<NameExpr strTextExpr="var_linked_object_class_name"></NameExpr>
+				<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+			</ProcVrbl>
+			<ProcVrbl iId="3" eType="1">
+				<DValue value="0." type="double"></DValue>
+				<NameExpr strTextExpr="var_counter"></NameExpr>
+				<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+			</ProcVrbl>
+			<ProcVrbl iId="0" eType="1">
+				<DValue value="0." type="double"></DValue>
+				<NameExpr strTextExpr="tpi > 0.3"></NameExpr>
+				<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+			</ProcVrbl>
+			<ProcVrbl iId="4" eType="2">
+				<DValue value="0." type="double"></DValue>
+				<NameExpr strTextExpr="UID"></NameExpr>
+				<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+			</ProcVrbl>
+		</ProcVrblCntnr>
+		<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000000555111512312578270212" NNSlope="0.20000000000000001110223024625156540424" RdiResamplOptns="3">
+			<AllClss>
+				<Clss id="1" name="flat&lt;2" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1741943805" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="92" G="53" B="189"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="2" name="2flat&lt;2" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1741945922" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="3" name="Not top, not bottom" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742214376" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="4" name="top" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742214549" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="5" name="bottom" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742214582" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="6" name="trees" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742895652" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="7" name="Water" flag="3" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742209815" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="8" name="Not Water" flag="3" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742209940" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="251" B="240"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="9" name="Vegetation" flag="3" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742210056" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="10" name="Meadow" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742210107" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="192" G="255" B="160"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="11" name="Forest" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742210076" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="128" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="14" name="Not Vegetation" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Tschnur" tChngTime="1357821777" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="251" B="240"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="15" name="Objects on Water" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="syvpet" tChngTime="1742211426" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="16" name="Sea" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="crogg" tChngTime="1178554331" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="0" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="17" name="Other Water" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="crogg" tChngTime="1178543595" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="166" G="202" B="240"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="18" name="_Large Tank Seed" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Tschnur" tChngTime="1357830759" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="192" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="19" name="_residue" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Tschnur" tChngTime="1357826075" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="20" name="Large Tank" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Tschnur" tChngTime="1357830729" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="21" name="var_current_class" flag="16" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Tschnur" tChngTime="1358125457" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+			</AllClss>
+			<PropTree version="20100426">
+				<AllProps>
+					<PropDscr Flag="4" strUserName="crogg" tChngTime="1177332446" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean nir"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="nir" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="0" strUserName="syvpet" tChngTime="1740037941" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean red1"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="red" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="16777216" strUserName="crogg" tChngTime="1177337177" group_id="object.cust.prop">
+						<PropDscrId GUID="E869FC89-440F-41e4-A7DF-1E9DE9040CEC" InstID="Arithmetic Feature1"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="_NDVI" type="string" name="NameExpr"></DValue>
+							<DValue type="vector" name="valPropVctr">
+								<Values>
+									<DValue type="propDscrId" indx="0">
+									<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean nir"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="1">
+									<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean red1"></PropDscrId>
+									</DValue>
+								</Values>
+							</DValue>
+							<DValue value="(d00;-d01;)/(d00;+d01;)" type="string" name="strExpr"></DValue>
+							<DValue value="0" type="int" name="iUnit"></DValue>
+							<DValue value="" type="string" name="Comment"></DValue>
+							<DValue value="1" type="bool" name="bUseDeg"></DValue>
+							<DValue value="0" type="bool" name="bUseUnit"></DValue>
+							<DValue value="0" type="bool" name="bShared"></DValue>
+							<DValue value="" type="string" name="strInstGUID"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="0" strUserName="crogg" tChngTime="1177587967" group_id="relbrdr.nghb.objrel.object.prop">
+						<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to not Water"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="8" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="0" strUserName="crogg" tChngTime="1178284009" group_id="relbrdr.nghb.objrel.object.prop">
+						<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Water"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="7" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="0" strUserName="syvpet" tChngTime="1742214296" group_id="qntl.chnl.object.prop">
+						<PropDscrId GUID="07A06302-DDCD-4304-B58F-A247C8B251D1" InstID="quantile[0]()"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="" name="mLayer"></DValue>
+							<DValue value="0." type="double" name="mQuantile"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="65536" strUserName="crogg" tChngTime="1177332446" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="03E04ED0-94DD-45ee-801E-14D70E6E2417" InstID="Area"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="0" Dim="2"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+				</AllProps>
+				<UserGroups></UserGroups>
+			</PropTree>
+			<Brightness>
+				<Map MapName="main">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="1." chnl="3"></BrghtWght>
+						<BrghtWght val="1." chnl="4"></BrghtWght>
+						<BrghtWght val="1." chnl="5"></BrghtWght>
+						<BrghtWght val="1." chnl="6"></BrghtWght>
+						<BrghtWght val="1." chnl="7"></BrghtWght>
+						<BrghtWght val="1." chnl="8"></BrghtWght>
+						<BrghtWght val="1." chnl="9"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+			</Brightness>
+			<AllVrblClss>
+				<ClassVrblValue VrblId="21" ValueId="14"></ClassVrblValue>
+			</AllVrblClss>
+			<AllSubClss>
+				<Clss Id="1" PrfdGrp="1">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="2" PrfdGrp="2">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="3" PrfdGrp="3">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="4" PrfdGrp="4">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="5" PrfdGrp="5">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="6" PrfdGrp="6">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="7" PrfdGrp="7">
+					<SubClss></SubClss>
+					<SubGrp>
+						<Grp Id="17"></Grp>
+						<Grp Id="16"></Grp>
+					</SubGrp>
+				</Clss>
+				<Clss Id="8" PrfdGrp="8">
+					<SubClss>
+						<Clss Id="14"></Clss>
+						<Clss Id="9"></Clss>
+					</SubClss>
+					<SubGrp>
+						<Grp Id="9"></Grp>
+						<Grp Id="14"></Grp>
+					</SubGrp>
+				</Clss>
+				<Clss Id="9" PrfdGrp="8">
+					<SubClss>
+						<Clss Id="10"></Clss>
+						<Clss Id="11"></Clss>
+					</SubClss>
+					<SubGrp>
+						<Grp Id="11"></Grp>
+						<Grp Id="10"></Grp>
+					</SubGrp>
+				</Clss>
+				<Clss Id="10" PrfdGrp="9">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="11" PrfdGrp="9">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="14" PrfdGrp="8">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="15" PrfdGrp="15">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="16" PrfdGrp="7">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="17" PrfdGrp="7">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="18" PrfdGrp="18">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="19" PrfdGrp="19">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="20" PrfdGrp="20">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+			</AllSubClss>
+			<AllTerm>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="2" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermThrsh>
+						<TermBase ClssId="3" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<TermGroup eJoint="2">
+							<TermBase flags="0">
+								<Weight>
+									<DValue value="1" type="int"></DValue>
+								</Weight>
+							</TermBase>
+							<TermCondition eCmpr="2" eBaseUnit="0" eJoint="2">
+								<TermBase flags="0">
+									<Weight>
+									<DValue value="1" type="int"></DValue>
+									</Weight>
+								</TermBase>
+								<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="07A06302-DDCD-4304-B58F-A247C8B251D1" InstID="quantile[0]()"></PropDscrId>
+									</DValue>
+								</ProcVrblVal1>
+								<ProcVrblVal2>
+									<DValue value="1." type="double"></DValue>
+								</ProcVrblVal2>
+							</TermCondition>
+						</TermGroup>
+					</TermThrsh>
+					<TermBase ClssId="3" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="4" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="5" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="6" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermClause>
+						<TermBase ClssId="7" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean nir"></PropDscrId>
+						<PropHist>
+							<X Val="0."></X>
+							<X Val="0.16666666666666665741480812812369549647"></X>
+							<X Val="0.33333333333333331482961625624739099294"></X>
+							<X Val="0.5"></X>
+							<X Val="0.66666666666666662965923251249478198588"></X>
+							<X Val="0.83333333333333325931846502498956397176"></X>
+							<X Val="1."></X>
+							<Y Val="1."></Y>
+							<Y Val="0.96999999999999997335464740899624302983"></Y>
+							<Y Val="0.84999999999999997779553950749686919153"></Y>
+							<Y Val="0.5"></Y>
+							<Y Val="0.14999999999999999444888487687421729788"></Y>
+							<Y Val="2.9999999999999998889776975374843459576e-002"></Y>
+							<Y Val="0."></Y>
+							<Y Val="14."></Y>
+							<Y Val="17."></Y>
+							<Incr Val="-0.180000000000000159872115546022541821"></Incr>
+							<Incr Val="-0.71999999999999997335464740899624302983"></Incr>
+							<Incr Val="-2.0999999999999996447286321199499070644"></Incr>
+							<Incr Val="-2.1000000000000005329070518200751394033"></Incr>
+							<Incr Val="-0.7200000000000000843769498715118970722"></Incr>
+							<Incr Val="-0.17999999999999991007193500536232022569"></Incr>
+							<DUnitInfo Conversion="-1" UnitType="0" Dim="0"></DUnitInfo>
+						</PropHist>
+					</TermClause>
+					<TermBase ClssId="7" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermSmlr ClssId="7">
+						<TermBase ClssId="8" flags="1">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+					</TermSmlr>
+					<TermBase ClssId="8" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermClause>
+						<TermBase ClssId="9" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<PropDscrId GUID="E869FC89-440F-41e4-A7DF-1E9DE9040CEC" InstID="Arithmetic Feature1"></PropDscrId>
+						<PropHist>
+							<X Val="0."></X>
+							<X Val="0.16666666666666665741480812812369549647"></X>
+							<X Val="0.33333333333333331482961625624739099294"></X>
+							<X Val="0.5"></X>
+							<X Val="0.66666666666666662965923251249478198588"></X>
+							<X Val="0.83333333333333325931846502498956397176"></X>
+							<X Val="1."></X>
+							<Y Val="0."></Y>
+							<Y Val="2.9999999999999998889776975374843459576e-002"></Y>
+							<Y Val="0.14999999999999999444888487687421729788"></Y>
+							<Y Val="0.5"></Y>
+							<Y Val="0.84999999999999997779553950749686919153"></Y>
+							<Y Val="0.96999999999999997335464740899624302983"></Y>
+							<Y Val="1."></Y>
+							<Y Val="0.17999999999999999333866185224906075746"></Y>
+							<Y Val="0.22000000000000000111022302462515654042"></Y>
+							<Incr Val="0.17999999999999999333866185224906075746"></Incr>
+							<Incr Val="0.71999999999999997335464740899624302983"></Incr>
+							<Incr Val="2.0999999999999996447286321199499070644"></Incr>
+							<Incr Val="2.1000000000000005329070518200751394033"></Incr>
+							<Incr Val="0.7200000000000000843769498715118970722"></Incr>
+							<Incr Val="0.18000000000000007660538869913580128923"></Incr>
+							<DUnitInfo Conversion="-1" UnitType="0" Dim="0"></DUnitInfo>
+						</PropHist>
+					</TermClause>
+					<TermBase ClssId="9" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermThrsh>
+						<TermBase ClssId="10" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<TermGroup eJoint="2">
+							<TermBase flags="0">
+								<Weight>
+									<DValue value="1" type="int"></DValue>
+								</Weight>
+							</TermBase>
+							<TermCondition eCmpr="3" eBaseUnit="0" eJoint="2">
+								<TermBase flags="0">
+									<Weight>
+									<DValue value="1" type="int"></DValue>
+									</Weight>
+								</TermBase>
+								<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean red1"></PropDscrId>
+									</DValue>
+								</ProcVrblVal1>
+								<ProcVrblVal2>
+									<DValue value="28." type="double"></DValue>
+								</ProcVrblVal2>
+							</TermCondition>
+						</TermGroup>
+					</TermThrsh>
+					<TermBase ClssId="10" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermSmlr ClssId="10">
+						<TermBase ClssId="11" flags="1">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+					</TermSmlr>
+					<TermBase ClssId="11" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermSmlr ClssId="9">
+						<TermBase ClssId="14" flags="1">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+					</TermSmlr>
+					<TermBase ClssId="14" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermThrsh>
+						<TermBase ClssId="15" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<TermGroup eJoint="2">
+							<TermBase flags="0">
+								<Weight>
+									<DValue value="1" type="int"></DValue>
+								</Weight>
+							</TermBase>
+							<TermCondition eCmpr="5" eBaseUnit="0" eJoint="2">
+								<TermBase flags="0">
+									<Weight>
+									<DValue value="1" type="int"></DValue>
+									</Weight>
+								</TermBase>
+								<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Water"></PropDscrId>
+									</DValue>
+								</ProcVrblVal1>
+								<ProcVrblVal2>
+									<DValue value="1." type="double"></DValue>
+								</ProcVrblVal2>
+							</TermCondition>
+						</TermGroup>
+					</TermThrsh>
+					<TermClause>
+						<TermBase ClssId="15" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<PropDscrId GUID="03E04ED0-94DD-45ee-801E-14D70E6E2417" InstID="Area"></PropDscrId>
+						<PropHist>
+							<X Val="0."></X>
+							<X Val="0.16666666666666665741480812812369549647"></X>
+							<X Val="0.33333333333333331482961625624739099294"></X>
+							<X Val="0.5"></X>
+							<X Val="0.66666666666666662965923251249478198588"></X>
+							<X Val="0.83333333333333325931846502498956397176"></X>
+							<X Val="1."></X>
+							<Y Val="1."></Y>
+							<Y Val="0.96999999999999997335464740899624302983"></Y>
+							<Y Val="0.84999999999999997779553950749686919153"></Y>
+							<Y Val="0.5"></Y>
+							<Y Val="0.14999999999999999444888487687421729788"></Y>
+							<Y Val="2.9999999999999998889776975374843459576e-002"></Y>
+							<Y Val="0."></Y>
+							<Y Val="620."></Y>
+							<Y Val="640."></Y>
+							<Incr Val="-0.180000000000000159872115546022541821"></Incr>
+							<Incr Val="-0.71999999999999997335464740899624302983"></Incr>
+							<Incr Val="-2.0999999999999996447286321199499070644"></Incr>
+							<Incr Val="-2.1000000000000005329070518200751394033"></Incr>
+							<Incr Val="-0.7200000000000000843769498715118970722"></Incr>
+							<Incr Val="-0.17999999999999991007193500536232022569"></Incr>
+							<DUnitInfo Conversion="0" UnitType="0" Dim="2"></DUnitInfo>
+						</PropHist>
+					</TermClause>
+					<TermBase ClssId="15" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermSmlr ClssId="17">
+						<TermBase ClssId="16" flags="1">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+					</TermSmlr>
+					<TermBase ClssId="16" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermThrsh>
+						<TermBase ClssId="17" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<TermGroup eJoint="2">
+							<TermBase flags="0">
+								<Weight>
+									<DValue value="1" type="int"></DValue>
+								</Weight>
+							</TermBase>
+							<TermCondition eCmpr="5" eBaseUnit="5" eJoint="2">
+								<TermBase flags="0">
+									<Weight>
+									<DValue value="1" type="int"></DValue>
+									</Weight>
+								</TermBase>
+								<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to not Water"></PropDscrId>
+									</DValue>
+								</ProcVrblVal1>
+								<ProcVrblVal2>
+									<DValue value="1." type="double"></DValue>
+								</ProcVrblVal2>
+							</TermCondition>
+						</TermGroup>
+					</TermThrsh>
+					<TermBase ClssId="17" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="18" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="19" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="20" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+			</AllTerm>
+		</ClssHrchy>
+		<MapVrblCntnr></MapVrblCntnr>
+		<FtrListVrblCntnr></FtrListVrblCntnr>
+		<CoordVrblCntnr></CoordVrblCntnr>
+		<ROIVrblCntnr></ROIVrblCntnr>
+		<ImgObjListVrblCntnr></ImgObjListVrblCntnr>
+		<ArrayCntnr>
+			<Arrays>
+				<Array>
+					<RlstArray name="array_current_class" type="class" bVrbl="0">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</RlstArray>
+					<RlstArrayData>
+						<DValue value="14" type="clssId"></DValue>
+					</RlstArrayData>
+				</Array>
+			</Arrays>
+			<ArrayVrbls></ArrayVrbls>
+		</ArrayCntnr>
+		<Smpls>
+			<AllClss>
+				<SmplList ClssId="1"></SmplList>
+				<SmplList ClssId="2"></SmplList>
+				<SmplList ClssId="3"></SmplList>
+				<SmplList ClssId="4"></SmplList>
+				<SmplList ClssId="5"></SmplList>
+				<SmplList ClssId="6"></SmplList>
+				<SmplList ClssId="7"></SmplList>
+				<SmplList ClssId="8"></SmplList>
+				<SmplList ClssId="9"></SmplList>
+				<SmplList ClssId="10"></SmplList>
+				<SmplList ClssId="11"></SmplList>
+				<SmplList ClssId="14"></SmplList>
+				<SmplList ClssId="15"></SmplList>
+				<SmplList ClssId="16"></SmplList>
+				<SmplList ClssId="17"></SmplList>
+				<SmplList ClssId="18"></SmplList>
+				<SmplList ClssId="19"></SmplList>
+				<SmplList ClssId="20"></SmplList>
+				<SmplList ClssId="14"></SmplList>
+			</AllClss>
+			<AllProp></AllProp>
+		</Smpls>
+		<plugin-list>
+			<plugin name="eCognition Internal Process Algorithms" version="0.1"></plugin>
+			<plugin name="eCognition Interactive Process Algorithms" version="0.1"></plugin>
+		</plugin-list>
+	</ObjectDependencies>
+	<CustProcAlgrList></CustProcAlgrList>
+	<ExternalCustProcAlgrList></ExternalCustProcAlgrList>
+	<ProcessList>
+		<ProcBase Name="1. Setup" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+				<Params></Params>
+			</Algorithm>
+			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+				<Params>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="From Parent" type="string" name="valMap"></DValue>
+				</Params>
+			</Domain>
+			<SubProc>
+				<ProcBase Name="Import AR5" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="create/modify project" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="BFE01F42-3004-4d81-AF49-9B6B4CC35156">
+								<Params>
+									<DValue value="" type="string" name="vrblImgFile"></DValue>
+									<DValue value="0." type="double" name="vrblImgLayer"></DValue>
+									<DValue value="Layer 1" type="string" name="vrblImgAlias"></DValue>
+									<DValue value="0" type="bool" name="bEnforceFit"></DValue>
+									<DValue value="F:\Naturkart\Segmentering_2026\00_\AR5\frekstad_2.shp" type="string" name="vrblThmFile"></DValue>
+									<DValue value="F:\Naturkart\Segmentering_2026\00_\AR5\frekstad_2.dbf" type="string" name="vrblThmAttrFile"></DValue>
+									<DValue value="ID" type="string" name="vrblIdCol"></DValue>
+									<DValue value="AR5" type="string" name="vrblThmAlias"></DValue>
+									<DValue value="" type="string" name="vrblMdPath"></DValue>
+									<DValue value="" type="string" name="vrblMdDrvr"></DValue>
+									<DValue value="Metadata 1" type="string" name="vrblMdAlias"></DValue>
+									<DValue value="0" type="bool" name="bShowSubset"></DValue>
+									<DValue value="1" type="int" name="bEnblGeo"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 1->&quot;1_red&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 1" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 1" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="1_red" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 2->&quot;2_green&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="2_green" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 3->&quot;3_nir&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 3" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 3" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="3_nir" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 4->&quot;4_TPI20&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="4_TPI20" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 5->&quot;5_TPI50&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 5" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 5" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="5_TPI50" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 6->&quot;6_TPI70&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 6" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 6" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="6_TPI70" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 7->&quot;7_CHM_gaus5&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 7" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 7" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="7_CHM_gaus5" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 8->&quot;8_CHM&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 8" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 8" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="8_CHM" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 9->&quot;9_NDVI&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 9" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 9" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="9_NDVI" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="assign/rename layer alias: Layer 10->&quot;10_Slope_Gaus5&quot;" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="C5827076-127C-4B64-88FF-B7828C3BAB4B">
+						<Params>
+							<DValue value="0" type="int" name="eType"></DValue>
+							<DValue value="1" type="bool" name="bRenameAlias"></DValue>
+							<DValue type="img_chnl" value="Layer 10" scope="" name="m_valImgChnl1"></DValue>
+							<DValue type="img_chnl" value="Layer 10" scope="" name="m_valThmChnl1"></DValue>
+							<DValue value="10_Slope_Gaus5" type="string" name="m_vrblAlias1"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl2"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias2"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl3"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias3"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl4"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias4"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl5"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias5"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl6"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias6"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl7"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias7"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl8"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias8"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl9"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias9"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl10"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias10"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl11"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias11"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl12"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias12"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl13"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias13"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl14"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias14"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl15"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias15"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl16"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias16"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl17"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias17"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl18"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias18"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl19"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias19"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl20"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias20"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl21"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias21"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl22"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias22"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl23"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias23"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl24"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias24"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl25"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias25"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl26"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias26"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl27"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias27"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl28"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias28"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl29"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias29"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl30"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias30"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl31"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias31"></DValue>
+							<DValue type="img_chnl" value="" name="m_valImgChnl32"></DValue>
+							<DValue type="img_chnl" value="" name="m_valThmChnl32"></DValue>
+							<DValue value="" type="string" name="m_vrblAlias32"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="delete 'New Level'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="4D72CCF3-EB44-4dcb-B5E1-70CA007D50CE">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="New Level" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+			</SubProc>
+		</ProcBase>
+	</ProcessList>
+	<ExportedItems></ExportedItems>
+	<LcnsIds></LcnsIds>
+</eCog.Proc>

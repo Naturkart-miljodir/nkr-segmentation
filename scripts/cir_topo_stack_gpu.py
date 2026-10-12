@@ -1001,7 +1001,7 @@ def encode_layers_for_output(
     if config.output_dtype == "uint8":
         encoded_layers = []
 
-        for band_name, layer in zip(BAND_DESCRIPTIONS, layers):
+        for band_name, layer in zip(BAND_DESCRIPTIONS, layers, strict=False):
             lower, upper = config.uint8_scale_ranges[band_name]
 
             encoded = np.full(
@@ -1555,5 +1555,5 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except KeyboardInterrupt:
-        raise SystemExit("Avbrutt av bruker.")
+    except KeyboardInterrupt as err:
+        raise SystemExit("Avbrutt av bruker.") from err

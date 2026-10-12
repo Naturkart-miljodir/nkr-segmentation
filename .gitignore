@@ -1,0 +1,43 @@
+# Basic Python .gitignore
+# Tip: for a more comprehensive .gitignore see GitHubs Python.gitignore
+# > https://github.com/github/gitignore/blob/main/Python.gitignore
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+_version.py
+
+# Virtual environments
+.venv
+
+# Local environment files
+.env
+
+# Ruff stuff:
+.ruff_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest: unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# safety
+# .safety-project.ini
+
+# Docker
+devcontainer-lock.json

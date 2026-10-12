@@ -4,7 +4,7 @@
 # pre-commit run --files R/*
 # pre-commit run --all-files
 # pre-commit uninstall
-# exclude: '^(notebooks|scripts)/.*'
+exclude: '^(notebooks)/.*|.*\.dcp$'
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0

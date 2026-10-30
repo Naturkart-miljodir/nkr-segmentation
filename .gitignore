@@ -2,20 +2,42 @@
 # Tip: for a more comprehensive .gitignore see GitHubs Python.gitignore
 # > https://github.com/github/gitignore/blob/main/Python.gitignore
 
+# --- Python project ignores ---
 # Python-generated files
 __pycache__/
 *.py[oc]
+*.py[cod]
+*.py[codz]
+*$py.class
+*.pyo
+*.pyd
+
+# Packaging
 build/
 dist/
 wheels/
 *.egg-info
 _version.py
 
-# Virtual environments
+# Environments
+# For Python projects it is recommended to add .python-version, uv.lock, poetry.lock,
+# pixi.lock to version control. Is your project a library or package?
+# If so, you might want to ignore these files since the code is intended to run in
+# multiple environments.
 .venv
-
-# Local environment files
+venv/
+.pixi/
+env/
 .env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pixi/*
+!.pixi/config.toml
 
 # Ruff stuff:
 .ruff_cache/
@@ -36,8 +58,9 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# safety
-# .safety-project.ini
+# Jupyter Notebook
+.ipynb_checkpoints/
 
-# Docker
-devcontainer-lock.json
+# --- Repo sepecific ignores ---
+# Folders
+tmp/
